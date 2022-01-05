@@ -19,7 +19,7 @@
 .nft1, .nft2, .nft3, .nft4, .nft5, .nft6{
   position: absolute;
   z-index: -1;
-  opacity: 0.35;
+  opacity: 0.5;
   top: 170px;
   width: 600px;
   left: -17px;
