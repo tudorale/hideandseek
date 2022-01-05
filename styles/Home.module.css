@@ -7,13 +7,13 @@
   margin-top: 100px;
 }
 
-.nftContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.extraContainer {
   max-width: 1500px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-top: 70px;
+  display: grid;
+  width: fit-content;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nft1, .nft2, .nft3, .nft4, .nft5, .nft6{
@@ -25,26 +25,36 @@
   left: -17px;
 }
 
+.nft1 {
+  top: -10px;
+}
+
 .nft2 {
   width: 750px;
-  top: 5000px;
+  top: 5350px;
   left: 0;
 }
 
 .nft3 {
   width: 700px;
-  top: 10000px;
+  top: 9800px;
   right: 10px;
   left: unset;
 }
 
+
 .all {
   width: 100%;
+  opacity: .5;
+  position: absolute;
+  z-index: -1;
+  margin-top: -250px;
 }
 
 .nft4, .nft5, .nft6{
   display: none;
 }
+
 
 @media only screen and (min-width: 1600px){
   .nft1{
@@ -55,6 +65,22 @@
   .nft2 {
     width: 900px;
   }
+
+}
+
+@media only screen and (min-width: 1400px){
+  .extraContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+@media only screen and (max-width: 1120px){
+  .extraContainer {
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+  }
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -62,8 +88,17 @@
     width: 500px;
   }
 
+  .nft1 {
+    top: 50px;
+  }
+
+  .nft3{
+    top: 15400px;
+  }
+
   .nft2 {
     width: 600px;
+    top: 4800px;
   }
 }
 
@@ -72,12 +107,16 @@
     width: 350px;
   }
 
+  .nft1 {
+    top: 130px;
+  }
+
   .nft2 {
     top: 7900px;
   }
 
   .nft3 {
-    top: 17440px;
+    top: 17620px;
   }
 
   .nft2 {
@@ -86,21 +125,25 @@
 }
 
 @media only screen and (max-width: 660px) {
+  .extraContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .nft1, .nft3 {
     width: 250px;
   }
 
   .nft1 {
     width: 300px;
-    top: 280px;
+    top: 170px;
   }
 
   .nft2 {
-    top: 7900px;
+    top: 8000px;
   }
 
   .nft3 {
-    top: 15300px;
+    top: 15200px;
   }
 
   .nft2 {
@@ -110,7 +153,7 @@
   .nft4{
     display: block;
     width: 300px;
-    top: 20150px;
+    top: 20100px;
     left: -30;
   }
 
@@ -124,8 +167,14 @@
   .nft6{
     display: block;
     width: 300px;
-    top: 35350px;
+    top: 35150px;
     left: -35px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .all{
+    margin-top: 0px;
   }
 }
 

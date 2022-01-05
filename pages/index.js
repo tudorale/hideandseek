@@ -92,7 +92,6 @@ export default function Home() {
     {name: "Name", src: "/images/placeholder.jpg"},
     {name: "Name", src: "/images/placeholder.jpg"},
     {name: "Name", src: "/images/placeholder.jpg"},
-    {name: "Name", src: "/images/placeholder.jpg"},
   ]
 
   return (
@@ -113,16 +112,19 @@ export default function Home() {
       <img className={styles.nft6} src="/images/nft2.png" alt="NFT" />
 
       <div className={styles.nftContainer}>
-        {
-          nfts.map((data) => {
-            return (
-              <Nft name={`${data.name}`} key={6 * Math.random(99999) + Math.random(99999)} src={`${data.src}`} />
-            )
-          })
-        }
+        <div className={styles.extraContainer}>
+          {
+            nfts.map((data) => {
+              return (
+                <Nft name={`${data.name}`} key={6 * Math.random(99999) + Math.random(99999)} src={`${data.src}`} />
+              )
+            })
+          }
+        </div>
+        <img className={styles.all} src="/images/all.png" alt="All NFTs" />
       </div>
 
-      <img className={styles.all} src="/images/all.png" alt="All NFTs" />
+      
     </div>
   )
 }
