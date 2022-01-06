@@ -35,15 +35,17 @@ function Nft(props) {
     return (
         <div className={styles.NftWrapper}>
             <img src={`${props.src}`} alt={`${props.name}`} />
+            <a className={styles.verification} href="#">Verification</a>
+
             <p>{props.name}</p>
 
-            <p className={styles.hide + " " + classOne} onMouseOver={() => mouseOver(classOne, classTwo)}>Hide</p>
+            <p className={styles.hide + " " + classOne} onMouseOver={() => mouseOver(classOne, classTwo)}>hide</p>
             <a className={styles.seek + " " + classTwo} onMouseOut={() => mouseOut(classOne, classTwo)}
                target="_blank" 
                rel="noreferrer"
                href="https://twitter.com/intent/tweet?text=Hello%20world"
                data-size="large">
-                Seek
+                seek
             </a>
         </div>
     )

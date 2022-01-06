@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Nft from "../components/Nft";
+import Nft from "../components/Nft/Nft";
+import Countdown from "../components/Countdown/Countdown"
 
 export default function Home() {
 
@@ -103,6 +104,8 @@ export default function Home() {
       </Head>
 
       <h1 className={styles.heading}>hide and seek</h1>
+      <Countdown />
+      
       <img className={styles.nft1} src="/images/nft1.png" alt="NFT" />
       <img className={styles.nft2} src="/images/nft2.png" alt="NFT" />
       <img className={styles.nft3} src="/images/nft3.png" alt="NFT" />

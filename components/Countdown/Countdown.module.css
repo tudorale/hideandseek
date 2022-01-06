@@ -1,0 +1,79 @@
+.countDownWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-bottom: 2px solid white;
+    margin: 0 auto;
+}
+
+.countDownWrapper div {
+    color: white;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countDownWrapper div h1 {
+    font-family: "Stgotic" !important;
+    font-size: 2.5rem;
+}
+
+.countDownWrapper div p {
+    font-size: 1.5rem;
+    margin-top: -20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .countDownWrapper div {
+        margin: 0 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .countDownWrapper div h1 {
+        font-size: 2rem;
+    }
+
+    .countDownWrapper div p {
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .countDownWrapper{
+        border-bottom: 0px solid white;
+    }
+
+    .countDownWrapper div h1 {
+        font-size: 1.8rem;
+    }
+
+    .countDownWrapper div p {
+        font-size: 1rem;
+    }
+    .countDownWrapper div {
+        margin: 0 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 375px) {
+    .countDownWrapper{
+        border-bottom: 0px solid white;
+    }
+
+    .countDownWrapper div h1 {
+        font-size: 1.6rem;
+    }
+
+    .countDownWrapper div p {
+        font-size: 1rem;
+    }
+    .countDownWrapper div {
+        margin: 0 5px;
+    }
+    
+}

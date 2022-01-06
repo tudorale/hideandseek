@@ -6,6 +6,14 @@
     border-radius: 15px;
 }
 
+.verification {
+    position: relative;
+    top: 25px;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
 .NftWrapper{
     color: white;
     display: flex;
@@ -22,19 +30,19 @@
 
 .NftWrapper .hide {
     color: black;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 600;
     border: none;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 15px;
     transition: all 400ms ease;
     font-family: "Stgotic" !important;
 }
 .NftWrapper .hide::before {
     content: "";
-    width: 120px;
-    height: 35px;
-    margin-left: -40px;
+    width: 128px;
+    height: 40px;
+    margin-left: -44px;
     margin-top: -2px;
     z-index: -1;
     background: url("/images/rectangle.png");
@@ -49,19 +57,20 @@
     transition: all 400ms ease;
     position: relative;
     opacity: 0;
-    top: -59px;
+    top: -67px;
     z-index: -1;
+    left: 1px;
     border: none;
     cursor: pointer;
-    font-size: 10.3px;
+    font-size: 12px;
     border-radius: 15px;
 }
 
 .NftWrapper .seek::before {
     content: "";
-    width: 120px;
-    height: 35px;
-    margin-left: -40px;
+    width: 128px;
+    height: 40px;
+    margin-left: -44px;
     margin-top: -2px;
     z-index: -1;
     background: url("/images/rectangle.png");
