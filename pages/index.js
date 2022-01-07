@@ -15,8 +15,8 @@ function index() {
             </div>
 
             <div className={styles.roadmapText}>
-                <p>1) First 66 Boogle owners have 66 days to Seek their Peek-a-Boogle</p>
-                <p>2) We are same-same, but different… but still same</p>
+                <p>First 66 Boogle owners have 66 days to Seek their Peek-a-Boogle</p>
+                <p>We are same-same, but different… but still same</p>
             </div>
         </div>
     )
